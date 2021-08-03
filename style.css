@@ -1,124 +1,118 @@
-*{
-    margin: 0;;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box
 }
-main{
-    background-color: rgba(255, 192, 203, 0.281);
-    height: 100vh;
+
+body {
+    background: rgba(255, 192, 203, 0.281);
+}
+.tp{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fd;
+	color: lighten(black,50%);
+    border-radius: 15px;
+    padding: 3%;
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid pink;
+}
+.mcq{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.question{
+    font-size: 200%;
+    padding: 2%;
+}
+.options{
+    font-size: 150%;
+    padding: 1%;
+}
+label{
+    display: block;
+}
+.option{
+    display: flex;
+    flex-direction: row;
+}
+.buttons{
+    display: flex;
+    margin-top: 2%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.prev,.next{
+    
+}
+button{
+    font-size: 150%;
+    display: inline;
+    padding: 1%;
+    height: 1%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: 1px solid  rgba(247,89,89,1);
+}
+button:hover{
+    color:white;
+    background: rgb(240, 86, 112);
+}
+.options{
+    padding-left: 7%;
+    display: flex;
+}
+input {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+nav>h2{
+    padding: 0.5%;
+    margin: 0.5%;
+}
+a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.boxcenter{
-    background-color: white;
-    color: black;
-    display: flex;
-    border-radius: 15px;
-    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
-}
-h2{
-    color:rgb(253, 81, 109);
-    border-bottom: 1px solid #EC3A48;
-    text-align: center;
-    padding: 2%;
-    font-size: 200%;
-    font-weight: 900;
-    margin-bottom: 10%;
-}
-.rules{
-    width: 50%;
-    padding: 3%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: black;
-    background-color: white;
-    border-radius: 15px;
-    
-}
-.login{
-    width: 50%;
-    padding: 3%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-}
-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-}
-form>label{
-    padding-left: 0.5%;
-}
-form>input,form>textarea{
-    
-    border: 1px solid black;
-    background-color: black;
-    border-bottom: 1px solid white;
-    margin: 0.25%;
-    padding: 1%;
-    width: 100%;
-    overflow: auto;
-}
-form>input{
-    width: 100%;
-    height: 30px;
-    border-width: 0 0 2px 0px;
-    border-color: lightgray;
-    background-color: transparent;
-    opacity: 0.4;
-    font-size: 16px;
-    border-color: lightgray;
-    background-color: transparent;
-    color: #EC3A48;
-}
-form>input[type="submit"]{
-    opacity: 1;
+    background-color: rgb(248, 106, 130);
+    padding: 0.5%;
+    margin: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 100%;
+    text-decoration: none;
     color: white;
-    margin-top: 50px;
-    height: 50px;
-    width: 100%;
-    border-bottom: 0px solid white;
-    background-color: rgb(247, 140, 158);
-    font-size: 125%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
+    border-radius: 15px;
 }
-form>input[type="submit"]:hover{
-    background-color:rgb(241, 98, 122);
-    font-size: 125%;
-}
-li{
-    padding: 2%;
-}
-input.password1{
-    margin-top:50px;
-  }
-  input:focus {
-    outline: 0;
-    opacity: 1;
-    border-color: #EC3A48;
-  }
-  ol{
-      padding-left: 5%;
-  }
-  @media only screen and (max-width: 600px) {
-    .boxcenter{
+@media only screen and (max-width: 600px) {
+    nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    main{
-        height: 100%;
-    }
-    .rules{
-        width: 100%;
-    }
-    .login{
-        width: 100%;
+    nan>h2,nav>a{
+        margin: 2%;
+        font-size: 150%;
     }
 }
